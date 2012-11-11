@@ -11,7 +11,11 @@
   {{greeting}}
   {{#each faces}}
   <div><h2>{{name}}</h2>
-    <img src={{file}} />
+    <img src={{face}} />
+    <audio controls="controls">
+      <source src="{{sound}}" type="audio/mp3">
+        Your browser does not support this audio format.
+    </audio>
   </div>
   {{/each}}
 </template>

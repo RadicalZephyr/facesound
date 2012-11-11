@@ -1,0 +1,17 @@
+<head>
+  <title>facesound</title>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <h1>Facesound</h1>
+  {{greeting}}
+  {{#each faces}}
+  <div><h2>{{name}}</h2>
+    <img src={{file}} />
+  </div>
+  {{/each}}
+</template>
